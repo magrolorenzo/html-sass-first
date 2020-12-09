@@ -1,0 +1,41 @@
+// Colore principale
+$main_color: coral;
+$second_color: lightgreen;
+$third_color: darkgreen;
+
+$default_distance: 15px;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+header{
+    height: 300px;
+    background-color: $main_color;
+    margin: $default_distance;
+    padding: $default_distance;
+}
+
+.inside-box{
+    border: $default_distance solid white;
+    height: 100%;
+    background-color: $third_color;
+    display: flex;
+}
+
+.inside-box h1{
+    text-transform: uppercase;
+    color: $second_color;
+    margin: auto;
+}
+
+.inside-box:hover{
+    background-color: $second_color;
+}
+
+.inside-box:hover h1{
+    color: $third_color;
+}
